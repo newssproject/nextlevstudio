@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next Level Studio - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">NEXT LEVEL STUDIO</h1>
+      
+      <!-- Hamburger Toggle Button (Mobile) -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#portfolio" class="nav-item">Works</a>
+        <a href="#reviews" class="nav-item">Reviews</a>
+        <a href="#faq" class="nav-item">FAQ</a>
+        <a href="#contact"
+           class="btn-primary nav-cta">Be My Next Client →</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="about" class="hero">
+    <span class="badge">Video Editor</span>
+    <h2 class="hero-title">
+      <span>Turn Raw Footage Into
+        Engaging, Polished Content.</span>
+    </h2>
+    <p class="hero-desc">
+      I’m a freelance video editor based in Kuching, Sarawak, helping brands, KOLs, UGC creators,
+      and businesses turn raw footage into engaging, polished content. From social media videos to ads and branded
+      content, I bring your vision to life through clean, creative, and attention-grabbing edits.
+    </p>
+  </section>
+
+  <!-- PORTFOLIO / VIDEO SHOWCASE -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="section-header">
+      <span class="badge">SHOWCASE</span>
+      <h3>Motion & Visual Edits</h3>
+      <p>A showcase of my recent video projects. Watch them directly below.</p>
+    </div>
+
+    <div class="portfolio-grid">
+      <!-- Video 1 -->
+      <div class="video-card">
+        <div class="video-wrapper">
+          <video controls preload="metadata">
+            <source src="assets/videos/video2.MOV" type="video/mp4">
+            Browser kamu tidak mendukung pemutaran video.
+          </video>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-card">
+        <div class="video-wrapper">
+          <video controls preload="metadata">
+            <source src="assets/videos/vidio.mov" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="video-card">
+        <div class="video-wrapper">
+          <video controls preload="metadata">
+            <source src="assets/videos/video3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- Video 4 -->
+      <div class="video-card">
+        <div class="video-wrapper">
+          <video controls preload="metadata">
+            <source src="assets/videos/video1.mov" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- Video 5 -->
+      <div class="video-card">
+        <div class="video-wrapper">
+          <video controls preload="metadata">
+            <source src="assets/videos/video4.MOV" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <!-- Banner Callout Drive di Bawah Grid Video -->
+    <div class="portfolio-more-box">
+      <div class="more-content">
+        <h4>Looking for more video samples?</h4>
+        <p>Explore my full collection of raw and finished edits on Google Drive.</p>
+      </div>
+      <a href="https://drive.google.com/drive/folders/1IZehaLlwGcdPn6k8WTaWEj2pfHJ5vE-L" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="btn-drive-large">
+        Open Google Drive Folder ↗
+      </a>
+    </div>
+  </section>
+
+  <!-- REVIEWS & PROOF SECTION -->
+  <section id="reviews" class="testimonials">
+    <div class="section-header">
+      <span class="badge">Client Reviews</span>
+      <h3>Client Reviews & Proof</h3>
+      <p>Real feedback from clients I've worked with. Click image to zoom.</p>
+    </div>
+
+    <div class="review-grid">
+      <div class="review-card">
+        <div class="review-header">
+          <span class="user-avatar">01</span>
+          <p class="review-quote">"I LOOOOVEEEE ITTT HHHUUUUUUUUUU 💖💖"</p>
+        </div>
+        <div class="review-thumb" onclick="openModal('assets/images/im.png')">
+          <img src="assets/images/im.png" alt="Client Review 1">
+          <div class="thumb-overlay">
+            <span class="btn-proof">🔍 View Proof</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <span class="user-avatar">02</span>
+          <p class="review-quote">"Thank u very much for ur editing! i love it 💕"</p>
+        </div>
+        <div class="review-thumb" onclick="openModal('assets/images/im1.png')">
+          <img src="assets/images/im1.png" alt="Client Review 2">
+          <div class="thumb-overlay">
+            <span class="btn-proof">🔍 View Proof</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <span class="user-avatar">03</span>
+          <p class="review-quote">"Yeayyy! Love it+ 💕💕💕"</p>
+        </div>
+        <div class="review-thumb" onclick="openModal('assets/images/im2.png')">
+          <img src="assets/images/im2.png" alt="Client Review 3">
+          <div class="thumb-overlay">
+            <span class="btn-proof">🔍 View Proof</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <span class="user-avatar">04</span>
+          <p class="review-quote">"You edit sangat kemas and mengikut kehendak i. Fast turnaround!"</p>
+        </div>
+        <div class="review-thumb" onclick="openModal('assets/images/im3.png')">
+          <img src="assets/images/im3.png" alt="Client Review 4">
+          <div class="thumb-overlay">
+            <span class="btn-proof">🔍 View Proof</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <span class="user-avatar">05</span>
+          <p class="review-quote">"So niceee!! Love it so much la your editing 🤍"</p>
+        </div>
+        <div class="review-thumb" onclick="openModal('assets/images/im4.png')">
+          <img src="assets/images/im4.png" alt="Client Review 5">
+          <div class="thumb-overlay">
+            <span class="btn-proof">🔍 View Proof</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <span class="user-avatar">06</span>
+          <p class="review-quote">"It's amazing! Honestly love the result."</p>
+        </div>
+        <div class="review-thumb" onclick="openModal('assets/images/im5.png')">
+          <img src="assets/images/im5.png" alt="Client Review 6">
+          <div class="thumb-overlay">
+            <span class="btn-proof">🔍 View Proof</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE POPUP MODAL -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="imgFull" alt="Proof Zoom">
+  </div>
+
+  <!-- FAQ SECTION (ACCORDION) -->
+  <section id="faq" class="faq-section">
+    <div class="section-header">
+      <span class="badge">FAQ</span>
+      <h3>Frequently Asked Questions</h3>
+      <p>Everything you need to know before starting a project.</p>
+    </div>
+
+    <div class="faq-grid">
+      <div class="faq-card" onclick="toggleFaq(this)">
+        <div class="faq-header">
+          <span class="faq-question">What type of videos do you edit?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-body">
+          <p>I edit different types of content, including TikTok, Reels, YouTube videos, promotional content, personal videos, and more.</p>
+        </div>
+      </div>
+
+      <div class="faq-card" onclick="toggleFaq(this)">
+        <div class="faq-header">
+          <span class="faq-question">Can I request a specific editing style?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-body">
+          <p>Of course! You can send me a reference or explain the style you're looking for, and I'll edit the video accordingly.</p>
+        </div>
+      </div>
+
+      <div class="faq-card" onclick="toggleFaq(this)">
+        <div class="faq-header">
+          <span class="faq-question">How do I send my footage?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-body">
+          <p>You can send your footage through Google Drive, Dropbox, or any convenient file-sharing platform.</p>
+        </div>
+      </div>
+
+      <div class="faq-card" onclick="toggleFaq(this)">
+        <div class="faq-header">
+          <span class="faq-question">How long does the editing take?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-body">
+          <p>Turnaround time depends on the length and complexity of the video. I'll let you know the estimated delivery time when you book.</p>
+        </div>
+      </div>
+
+      <div class="faq-card" onclick="toggleFaq(this)">
+        <div class="faq-header">
+          <span class="faq-question">Can I request changes after receiving the video?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-body">
+          <p>Yes! Minor amendments are welcome. Any major changes or additional work outside the original request may be charged separately.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section">
+    <div class="contact-card">
+      <span class="badge">Let's Work Together</span>
+      <h3>Have a video project in mind?</h3>
+      <p>Let’s turn your raw footage into content that actually gets attention.</p>
+      
+      <a href="https://wa.me/60136114147?text=Hi%20Next%20Level%20Studio!%20I'd%20like%20to%20start%20a%20video%20project%20with%20you." 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="btn-primary">START A PROJECT →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© Next Level Studio.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
